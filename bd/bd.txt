@@ -1,0 +1,40 @@
+CREATE DATABASE spring_mvc;
+USE spring_mvc;
+
+
+CREATE TABLE `persona` (
+  `Id` int(11) UNSIGNED NOT NULL,
+  `Nombres` varchar(244) DEFAULT NULL,
+  `Correo` varchar(244) DEFAULT NULL,
+  `Nacionalidad` varchar(244) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `persona` (`Id`, `Nombres`, `Correo`, `Nacionalidad`) VALUES
+('1', 'Leonel Messi', 'leonelmessi@gmail.com', 'Argentina'),
+('2', 'Cristiano Ronaldo', 'cristianoronaldo@gmail.com', 'Portugal'),
+('3', 'Ronaldinho Gaucho del Rio', 'ronaldinhogr@gmail.com', 'Brasil'),
+('4', 'Pablo Guerrero', 'pabloguerrero@gmail.com', 'Peru');
+
+
+
+
+para crear la tabla con la columna Id como autogenerada Index y primary key en Id cambiar 
+
+
+CREATE DATABASE spring_mvc;
+USE spring_mvc;
+
+CREATE TABLE `persona` (
+  `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `Nombres` varchar(244) DEFAULT NULL,
+  `Correo` varchar(244) DEFAULT NULL,
+  `Nacionalidad` varchar(244) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+INSERT INTO `persona` (`Nombres`, `Correo`, `Nacionalidad`) VALUES
+('Leonel Messi', 'leonelmessi@gmail.com', 'Argentina'),
+('Cristiano Ronaldo', 'cristianoronaldo@gmail.com', 'Portugal'),
+('Ronaldinho Gaucho del Rio', 'ronaldinhogr@gmail.com', 'Brasil'),
+('Pablo Guerrero', 'pabloguerrero@gmail.com', 'Peru');
